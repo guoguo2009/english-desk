@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>英语小课桌 · 译林版6年级</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- 顶部标题栏 -->
+    <header class="topbar">
+      <div class="topbar-title">英语小课桌</div>
+      <div class="topbar-sub">译林版 · 六年级上册</div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main id="main">
+
+      <!-- 首页 -->
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="hero-date" id="heroDate"></div>
+          <div class="hero-title">今天想练点什么？</div>
+          <div class="hero-streak" id="heroStreak"></div>
+        </div>
+
+        <div class="quick-grid">
+          <button class="quick-card q-dict" data-goto="dictation">
+            <div class="quick-emoji">✍️</div>
+            <div class="quick-name">单词默写</div>
+            <div class="quick-desc">看中文写英文 / 听音默写</div>
+          </button>
+          <button class="quick-card q-bank" data-goto="bank">
+            <div class="quick-emoji">📚</div>
+            <div class="quick-name">单词库</div>
+            <div class="quick-desc">按单元背单词</div>
+          </button>
+          <button class="quick-card q-listen" data-goto="skills" data-skill="listen">
+            <div class="quick-emoji">👂</div>
+            <div class="quick-name">听力</div>
+            <div class="quick-desc">听音选义</div>
+          </button>
+          <button class="quick-card q-speak" data-goto="skills" data-skill="speak">
+            <div class="quick-emoji">🗣️</div>
+            <div class="quick-name">口语</div>
+            <div class="quick-desc">跟读打分</div>
+          </button>
+          <button class="quick-card q-read" data-goto="skills" data-skill="read">
+            <div class="quick-emoji">📖</div>
+            <div class="quick-name">阅读</div>
+            <div class="quick-desc">课文点读</div>
+          </button>
+          <button class="quick-card q-wrong" data-goto="dictation" data-mode="wrong">
+            <div class="quick-emoji">🔁</div>
+            <div class="quick-name">错词复习</div>
+            <div class="quick-desc" id="homeWrongCount">0 个待巩固</div>
+          </button>
+        </div>
+
+        <div class="mini-stat">
+          <div class="mini-stat-item"><span class="ms-num" id="msLearned">0</span><span class="ms-label">已学单词</span></div>
+          <div class="mini-stat-item"><span class="ms-num" id="msWrong">0</span><span class="ms-label">错词</span></div>
+          <div class="mini-stat-item"><span class="ms-num" id="msDue">0</span><span class="ms-label">待复习</span></div>
+        </div>
+      </section>
+
+      <!-- 单词库 -->
+      <section class="page" id="page-bank">
+        <div class="search-bar">
+          <input type="search" id="bankSearch" placeholder="搜单词 / 中文意思…" />
+        </div>
+        <div id="unitList"></div>
+        <div id="wordListView" class="hidden"></div>
+      </section>
+
+      <!-- 默写 -->
+      <section class="page" id="page-dictation">
+        <div id="dictSetup">
+          <div class="card">
+            <div class="card-title">① 选单元</div>
+            <div id="dictUnits" class="chip-row"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">② 选模式</div>
+            <div class="mode-row">
+              <button class="mode-btn active" data-mode="zh2en">看中文写英文</button>
+              <button class="mode-btn" data-mode="en2zh">看英文写中文</button>
+              <button class="mode-btn" data-mode="listen">🔊 听音默写</button>
+            </div>
+          </div>
+          <button class="btn-primary" id="dictStart">开始默写</button>
+          <button class="btn-ghost" id="dictWrongEnter">📕 只练错词本</button>
+        </div>
+        <div id="dictPlay" class="hidden"></div>
+        <div id="dictResult" class="hidden"></div>
+      </section>
+
+      <!-- 听说读 -->
+      <section class="page" id="page-skills">
+        <div class="skill-tabs">
+          <button class="skill-tab active" data-skill="listen">👂 听力</button>
+          <button class="skill-tab" data-skill="speak">🗣️ 口语</button>
+          <button class="skill-tab" data-skill="read">📖 阅读</button>
+        </div>
+        <div id="skillListen" class="skill-panel"></div>
+        <div id="skillSpeak" class="skill-panel"></div>
+        <div id="skillRead" class="skill-panel"></div>
+      </section>
+
+      <!-- 进度 -->
+      <section class="page" id="page-progress">
+        <div class="card">
+          <div class="card-title">连续学习</div>
+          <div class="streak-big"><span id="streakDays">0</span> 天 🔥</div>
+        </div>
+        <div class="card">
+          <div class="card-title">单元掌握度</div>
+          <div id="unitBars"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">错词本（点击可复习）</div>
+          <div id="wrongBook"></div>
+          <button class="btn-ghost" id="clearWrong">清空错词本</button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 底部导航 -->
+    <nav class="tabbar">
+      <button class="tab active" data-page="home"><span class="tab-emoji">🏠</span><span class="tab-text">首页</span></button>
+      <button class="tab" data-page="bank"><span class="tab-emoji">📚</span><span class="tab-text">单词库</span></button>
+      <button class="tab" data-page="dictation"><span class="tab-emoji">✍️</span><span class="tab-text">默写</span></button>
+      <button class="tab" data-page="skills"><span class="tab-emoji">🎯</span><span class="tab-text">听说读</span></button>
+      <button class="tab" data-page="progress"><span class="tab-emoji">📊</span><span class="tab-text">进度</span></button>
+    </nav>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
