@@ -5,9 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>英语小课桌 · 译林版3-6年级</title>
+  <meta name="description" content="译林版3-6年级英语学习平台：单词默写、音标、跟读、错词本、按年级总复习，可安装到手机桌面离线使用。" />
+  <meta name="theme-color" content="#5b8cff" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="英语小课桌" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <!-- 安装到桌面提示条（支持的浏览器才出现） -->
+  <div id="installBar" class="install-bar" hidden>
+    <span class="install-text">📲 添加到主屏幕，随时打开</span>
+    <button id="installBtn" class="install-btn">安装</button>
+    <button id="installClose" class="install-close" aria-label="关闭">✕</button>
+  </div>
   <div id="app">
     <!-- 顶部标题栏 -->
     <header class="topbar">
