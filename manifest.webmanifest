@@ -1,0 +1,16 @@
+{
+  "name": "英语小课桌 · 译林版3-6年级",
+  "short_name": "英语小课桌",
+  "description": "译林版3-6年级英语学习平台：单词默写、音标、跟读、错词本、按年级总复习，可安装到手机桌面离线使用。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#eef3ff",
+  "theme_color": "#5b8cff",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
