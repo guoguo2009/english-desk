@@ -144,6 +144,20 @@ body {
 }
 .review-summary { font-size: 14px; color: var(--sub); margin: 4px 0 12px; font-weight: 600; }
 
+/* 总复习模块 · 淡绿色主题（仅作用于总复习页，不影响其它模块） */
+#page-review { background: linear-gradient(160deg, #e9f8ef 0%, #f4fcf7 100%); min-height: 100%; }
+#page-review .card { border: 1px solid #cdeedd; box-shadow: 0 6px 18px rgba(46,204,113,.10); }
+#page-review .card-title { color: #1f9d57; }
+#page-review .grade-row { gap: 10px; }
+#page-review .grade-chip { background: #fff; border: 2px solid #bfe9d2; color: #2f8f5b; }
+#page-review .grade-chip.active { background: linear-gradient(135deg,#34c759,#2ecc71); border-color: transparent; color: #fff; box-shadow: 0 6px 14px rgba(46,204,113,.30); }
+#page-review .review-summary { color: #2f8f5b; }
+#page-review .mode-btn { border: 2px solid #bfe9d2; color: #2f8f5b; background: #fff; }
+#page-review .mode-btn.active { border-color: #2ecc71; background: #e9fbf0; color: #1f9d57; }
+#page-review .chip { border: 2px solid #bfe9d2; color: #2f8f5b; background: #fff; }
+#page-review .chip.active { background: linear-gradient(135deg,#34c759,#2ecc71); border-color: transparent; color: #fff; box-shadow: 0 4px 10px rgba(46,204,113,.30); }
+#page-review .btn-primary { background: linear-gradient(135deg,#34c759,#2ecc71); box-shadow: 0 8px 18px rgba(46,204,113,.35); }
+
 /* 模式选择 */
 .mode-row { display: flex; flex-direction: column; gap: 10px; }
 .mode-btn { padding: 14px; border-radius: 14px; border: 2px solid #eef3ff; background: #fff; font-size: 15px; font-weight: 800; cursor: pointer; text-align: left; color: #445; }
