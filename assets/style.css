@@ -40,12 +40,19 @@ body {
 .topbar {
   position: sticky; top: 0; z-index: 20;
   background: linear-gradient(120deg, #5b8cff 0%, #8b5cf6 50%, #06b6d4 100%);
-  color: #fff; padding: 16px 18px 14px;
+  color: #fff; padding: 14px 18px 12px;
   box-shadow: 0 6px 18px rgba(91, 140, 255, 0.35);
   border-bottom-left-radius: 22px; border-bottom-right-radius: 22px;
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  flex-wrap: wrap;
 }
-.topbar-title { font-size: 20px; font-weight: 800; letter-spacing: 1px; }
-.topbar-sub { font-size: 12px; opacity: .92; margin-top: 2px; font-weight: 600; }
+.topbar-title { font-size: 20px; font-weight: 800; letter-spacing: 1px; white-space: nowrap; }
+.book-sel {
+  max-width: 52%; padding: 7px 10px; border-radius: 12px; border: none;
+  background: rgba(255,255,255,0.95); color: #3b3b7a; font-weight: 700; font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12); outline: none;
+}
+.book-sel optgroup { font-weight: 700; color: #5b8cff; }
 
 #main { flex: 1; padding: 14px 14px 90px; overflow-y: auto; }
 .page { display: none; animation: pop .28s cubic-bezier(.2,.9,.3,1.2); }
@@ -184,6 +191,19 @@ body {
 @keyframes pulse { 0%{transform:scale(1);} 50%{transform:scale(1.08);} 100%{transform:scale(1);} }
 .speak-score { text-align: center; font-size: 32px; font-weight: 900; }
 .speak-heard { text-align: center; color: var(--sub); font-size: 14px; margin-top: 6px; font-weight: 600; }
+
+/* 朗读：单词列表 */
+.read-words { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+.read-word-item {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  background: #fff; border-radius: 14px; padding: 12px 14px;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, .12); cursor: pointer;
+  border: 2px solid transparent;
+}
+.read-word-item:active { border-color: #8b5cf6; }
+.read-w-en { font-size: 17px; font-weight: 800; color: #2563eb; flex: 1 1 40%; }
+.read-w-ph { color: var(--sub); font-size: 13px; }
+.read-w-zh { color: #444; font-size: 14px; font-weight: 600; flex: 1 1 auto; }
 
 .read-passage { background: #fff; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); line-height: 2.1; font-size: 17px; border: 2px solid #ffe3ef; }
 .read-word { color: #db2777; font-weight: 700; cursor: pointer; border-bottom: 2px dashed #f9a8d4; }

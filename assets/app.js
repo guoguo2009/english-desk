@@ -47,6 +47,19 @@
     return 1 - d / max;
   }
 
+  /* ---------- 多册状态（3~6年级） ---------- */
+  // 当前选中的册（默认六年级上册，孩子即将进入六年级）
+  let currentBook = '六上';
+  let UNITS = (BOOKS[currentBook] && BOOKS[currentBook].units) || [];
+  // 切换册：重算 UNITS（单元 id 已含册名，进度/错词天然互不串）
+  function setBook(b) {
+    if (!BOOKS[b]) return;
+    currentBook = b;
+    UNITS = BOOKS[b].units;
+  }
+  const firstUid = () => (UNITS[0] ? UNITS[0].id : null);
+  let currentPageName = 'home';
+
   /* ---------- 语音：TTS ---------- */
   function speak(text, rate) {
     if (!('speechSynthesis' in window)) { toast('当前浏览器不支持发音'); return; }
@@ -90,7 +103,7 @@
   }
 
   /* ---------- 本地存储 ---------- */
-  const STORE_KEY = 'el_data_v1';
+  const STORE_KEY = 'el_data_v2';
   let store = loadStore();
   function loadStore() {
     try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
@@ -165,6 +178,7 @@
 
   /* ---------- 导航 ---------- */
   function goPage(name) {
+    currentPageName = name;
     $$('.page').forEach(p => p.classList.remove('active'));
     $('#page-' + name).classList.add('active');
     $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.page === name));
@@ -387,7 +401,7 @@
   }
 
   /* ---------- 听说读 ---------- */
-  let skillState = { listen: { unit: null, item: null }, speak: { unit: null, item: null }, read: { unit: 'u1' } };
+  let skillState = { listen: { unit: null, item: null }, speak: { unit: null, item: null }, read: { unit: null } };
 
   // 显示指定技能面板（与 CSS .skill-panel.active 规则一致）
   function showSkill(sk) {
@@ -424,14 +438,14 @@
 
   function renderListen() {
     const box = $('#skillListen');
-    const sel = skillState.listen.unit || 'u1';
+    const sel = skillState.listen.unit || firstUid();
     box.innerHTML = unitChipRow(sel, null) +
       `<div id="listenBody"></div>`;
     $$('.chip', box).forEach(c => c.onclick = () => { skillState.listen.unit = c.dataset.u; renderListen(); });
     nextListen();
   }
   function nextListen() {
-    const uid = skillState.listen.unit || 'u1';
+    const uid = skillState.listen.unit || firstUid();
     const u = UNITS.find(x => x.id === uid);
     const item = u.words[Math.floor(Math.random() * u.words.length)];
     skillState.listen.item = item;
@@ -474,13 +488,13 @@
 
   function renderSpeak() {
     const box = $('#skillSpeak');
-    const sel = skillState.speak.unit || 'u1';
+    const sel = skillState.speak.unit || firstUid();
     box.innerHTML = unitChipRow(sel, null) + `<div id="speakBody"></div>`;
     $$('.chip', box).forEach(c => c.onclick = () => { skillState.speak.unit = c.dataset.u; renderSpeak(); });
     nextSpeak();
   }
   function nextSpeak() {
-    const uid = skillState.speak.unit || 'u1';
+    const uid = skillState.speak.unit || firstUid();
     const u = UNITS.find(x => x.id === uid);
     const item = u.words[Math.floor(Math.random() * u.words.length)];
     skillState.speak.item = item;
@@ -523,25 +537,28 @@
 
   function renderRead() {
     const box = $('#skillRead');
-    const sel = skillState.read.unit || 'u1';
+    let sel = skillState.read.unit;
+    if (!sel || !UNITS.find(u => u.id === sel)) sel = firstUid();
+    skillState.read.unit = sel;
     const u = UNITS.find(x => x.id === sel);
     box.innerHTML = unitChipRow(sel, null) +
-      `<div id="readInfo" class="card" style="font-size:14px;color:var(--sub)">点击课文中的蓝色单词，可听发音并查看释义。</div>
-       <div class="read-passage" id="readPassage"></div>`;
+      `<div id="readInfo" class="card" style="font-size:14px;color:var(--sub)">点单词听发音，大声跟读。读完可切换到其它单元。</div>
+       <div class="read-words" id="readWords"></div>`;
     $$('.chip', box).forEach(c => c.onclick = () => { skillState.read.unit = c.dataset.u; renderRead(); });
-    const passage = $('#readPassage');
-    passage.innerHTML = u.text.split(/\s+/).map(tok => {
-      const clean = tok.replace(/[^A-Za-z']/g, '');
-      return `<span class="read-word" data-w="${clean}">${tok}</span>`;
-    }).join(' ');
-    $$('.read-word', passage).forEach(sp => sp.onclick = () => {
-      const w = sp.dataset.w.toLowerCase();
-      const found = u.words.find(x => normEn(x.en) === w);
-      const info = $('#readInfo');
-      if (found) info.innerHTML = `<b>${found.en}</b> <span style="color:var(--sub)">${found.ph || ''}</span><br>${found.zh}`;
-      else info.innerHTML = `<b>${w}</b>`;
-      speak(found ? found.en : w, 0.85);
+    const wrap = $('#readWords');
+    wrap.innerHTML = u.words.map(w =>
+      `<div class="read-word-item">
+         <span class="read-w-en" data-w="${w.en}">${w.en}</span>
+         <span class="read-w-ph">${w.ph || ''}</span>
+         <span class="read-w-zh">${w.zh}</span>
+         <button class="speak-btn" data-w="${w.en}" style="width:34px;height:34px;font-size:14px">🔊</button>
+       </div>`).join('');
+    $$('.read-w-en', wrap).forEach(sp => sp.onclick = () => {
+      const w = sp.dataset.w;
+      $('#readInfo').innerHTML = `<b>${w}</b>`;
+      speak(w, 0.85);
     });
+    $$('.speak-btn', wrap).forEach(b => b.onclick = (e) => { e.stopPropagation(); speak(b.dataset.w, 0.85); });
   }
 
   /* ---------- 进度 ---------- */
@@ -581,6 +598,19 @@
   function init() {
     // 底部导航
     $$('.tab').forEach(t => t.onclick = () => goPage(t.dataset.page));
+    // 册选择器（按年级分组）
+    const bookSel = $('#bookSel');
+    if (bookSel) {
+      ['三年级', '四年级', '五年级', '六年级'].forEach(g => {
+        const og = document.createElement('optgroup'); og.label = g + '词汇';
+        BOOK_ORDER.filter(b => BOOKS[b].grade === g).forEach(b => {
+          const o = document.createElement('option'); o.value = b; o.textContent = BOOKS[b].label; og.appendChild(o);
+        });
+        bookSel.appendChild(og);
+      });
+      bookSel.value = currentBook;
+      bookSel.onchange = () => { setBook(bookSel.value); goPage(currentPageName); };
+    }
     // 首页快捷卡
     $$('.quick-card').forEach(c => c.onclick = () => {
       goPage(c.dataset.goto);
@@ -593,7 +623,7 @@
     // 默写入口
     $('#dictStart').onclick = () => startDictation(false);
     $('#dictWrongEnter').onclick = () => startDictation(true);
-    // 搜索
+    // 搜索（跨全册）
     $('#bankSearch').addEventListener('input', e => {
       const q = e.target.value.trim().toLowerCase();
       if (!q) { renderUnitList(); return; }
@@ -602,12 +632,18 @@
       box.classList.remove('hidden');
       let html = `<button class="back-btn" id="bankBack">‹ 返回单元列表</button>`;
       let found = 0;
-      UNITS.forEach(u => u.words.forEach(w => {
-        if (normEn(w.en).includes(q) || normZh(w.zh).includes(q) || (w.en.toLowerCase().includes(q))) {
-          found++;
-          html += `<div class="word-item"><div style="flex:1"><div class="word-en">${w.en}</div><div class="word-ph">${w.ph || ''}</div><div class="word-zh">${w.zh}</div></div><button class="speak-btn" data-w="${w.en}">🔊</button></div>`;
-        }
-      }));
+      BOOK_ORDER.forEach(b => {
+        BOOKS[b].units.forEach(u => u.words.forEach(w => {
+          if (normEn(w.en).includes(q) || normZh(w.zh).includes(q) || w.en.toLowerCase().includes(q)) {
+            found++;
+            html += `<div class="word-item"><div style="flex:1">
+              <div class="word-en">${w.en}</div>
+              <div class="word-ph">${w.ph || ''}</div>
+              <div class="word-zh">${w.zh} <span style="color:var(--sub);font-size:12px">· ${b} ${u.title}</span></div>
+            </div><button class="speak-btn" data-w="${w.en}">🔊</button></div>`;
+          }
+        }));
+      });
       if (!found) html += '<div style="color:var(--sub)">没找到相关单词</div>';
       box.innerHTML = html;
       $('#bankBack').onclick = renderUnitList;

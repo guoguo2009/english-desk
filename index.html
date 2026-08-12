@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>英语小课桌 · 译林版6年级</title>
+  <title>英语小课桌 · 译林版3-6年级</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
     <!-- 顶部标题栏 -->
     <header class="topbar">
       <div class="topbar-title">英语小课桌</div>
-      <div class="topbar-sub">译林版 · 六年级上册</div>
+      <select id="bookSel" class="book-sel" aria-label="选择年级与册"></select>
     </header>
 
     <!-- 主内容区 -->
@@ -49,8 +49,8 @@
           </button>
           <button class="quick-card q-read" data-goto="skills" data-skill="read">
             <div class="quick-emoji">📖</div>
-            <div class="quick-name">阅读</div>
-            <div class="quick-desc">课文点读</div>
+            <div class="quick-name">朗读</div>
+            <div class="quick-desc">单词跟读</div>
           </button>
           <button class="quick-card q-wrong" data-goto="dictation" data-mode="wrong">
             <div class="quick-emoji">🔁</div>
@@ -102,7 +102,7 @@
         <div class="skill-tabs">
           <button class="skill-tab active" data-skill="listen">👂 听力</button>
           <button class="skill-tab" data-skill="speak">🗣️ 口语</button>
-          <button class="skill-tab" data-skill="read">📖 阅读</button>
+          <button class="skill-tab" data-skill="read">📖 朗读</button>
         </div>
         <div id="skillListen" class="skill-panel"></div>
         <div id="skillSpeak" class="skill-panel"></div>
