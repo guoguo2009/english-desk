@@ -24,7 +24,7 @@ const BOOKS = {
      },
      {
       "en": "Good morning",
-      "ph": "",
+      "ph": "/ɡˈʊd mˈɔrnɪŋ/",
       "zh": "早上好。"
      },
      {
@@ -34,12 +34,12 @@ const BOOKS = {
      },
      {
       "en": "Hi.",
-      "ph": "",
+      "ph": "/hˈaɪ/",
       "zh": "你好。"
      },
      {
       "en": "Good afternoon",
-      "ph": "",
+      "ph": "/ɡˈʊd ˌæftɚnˈun/",
       "zh": "下午好。"
      },
      {
@@ -135,7 +135,7 @@ const BOOKS = {
      },
      {
       "en": "he's",
-      "ph": "",
+      "ph": "/hiz/",
       "zh": "(=he is) 他是"
      },
      {
@@ -203,7 +203,7 @@ const BOOKS = {
      },
      {
       "en": "Good evening.",
-      "ph": "",
+      "ph": "/ɡˈʊd ˈivnɪŋ/",
       "zh": "晚上好。"
      }
     ]
@@ -216,7 +216,7 @@ const BOOKS = {
     "words": [
      {
       "en": "look at",
-      "ph": "",
+      "ph": "/lˈʊk ˈæt/",
       "zh": "看；瞧"
      },
      {
@@ -246,7 +246,7 @@ const BOOKS = {
      },
      {
       "en": "How nice!",
-      "ph": "",
+      "ph": "/hˈaʊ nˈaɪs/",
       "zh": "真好看!"
      },
      {
@@ -271,7 +271,7 @@ const BOOKS = {
      },
      {
       "en": "What colour ...?",
-      "ph": "",
+      "ph": "/wˈʌt kˈʌlɚ/",
       "zh": "……是什么颜色的?"
      },
      {
@@ -339,7 +339,7 @@ const BOOKS = {
      },
      {
       "en": "Would you like ...?",
-      "ph": "",
+      "ph": "/wˈʊd jˈu lˈaɪk/",
       "zh": "你想要......吗?"
      },
      {
@@ -349,7 +349,7 @@ const BOOKS = {
      },
      {
       "en": "Yes，please.",
-      "ph": "",
+      "ph": "/jˈɛs plˈiz/",
       "zh": "好的；太感谢了.。"
      },
      {
@@ -377,17 +377,17 @@ const BOOKS = {
      },
      {
       "en": "Nice to meet you.",
-      "ph": "",
+      "ph": "/nˈaɪs tˈu mˈit jˈu/",
       "zh": "很高兴认识你。"
      },
      {
       "en": "No，thank you.",
-      "ph": "",
+      "ph": "/nˈoʊ θˈæŋk jˈu/",
       "zh": "不；谢谢你。"
      },
      {
       "en": "What about ...?",
-      "ph": "",
+      "ph": "/wˈʌt əbˈaʊt/",
       "zh": "……怎么样？"
      },
      {
@@ -397,7 +397,7 @@ const BOOKS = {
      },
      {
       "en": "ice cream",
-      "ph": "",
+      "ph": "/ˈaɪs krˈim/",
       "zh": "冰淇淋"
      },
      {
@@ -407,7 +407,7 @@ const BOOKS = {
      },
      {
       "en": "hot dog",
-      "ph": "",
+      "ph": "/hˈɑt dˈɔɡ/",
       "zh": "热狗"
      },
      {
@@ -435,7 +435,7 @@ const BOOKS = {
     "words": [
      {
       "en": "Happy New Year!",
-      "ph": "",
+      "ph": "/hˈæpi nˈu jˈɪr/",
       "zh": "新年快乐!"
      },
      {
@@ -445,7 +445,7 @@ const BOOKS = {
      },
      {
       "en": "This is for you.",
-      "ph": "",
+      "ph": "/ðˈɪs ˈɪz fˈɔr jˈu/",
       "zh": "这是给你的。"
      },
      {
@@ -480,7 +480,7 @@ const BOOKS = {
      },
      {
       "en": "Happy birthday!",
-      "ph": "",
+      "ph": "/hˈæpi bˈɝθdˌeɪ/",
       "zh": "生日快乐!"
      },
      {
@@ -490,7 +490,7 @@ const BOOKS = {
      },
      {
       "en": "ah",
-      "ph": "",
+      "ph": "/ˈɑ/",
       "zh": "啊"
      },
      {
@@ -515,22 +515,22 @@ const BOOKS = {
     "words": [
      {
       "en": "in class",
-      "ph": "",
+      "ph": "/ɪn klˈæs/",
       "zh": "在上课"
      },
      {
       "en": "Stand up.",
-      "ph": "",
+      "ph": "/stˈænd ˈʌp/",
       "zh": "起立"
      },
      {
       "en": "Mr",
-      "ph": "",
+      "ph": "/mˈɪstɚ/",
       "zh": "先生"
      },
      {
       "en": "sit down.",
-      "ph": "",
+      "ph": "/sˈɪt dˈaʊn/",
       "zh": "坐下"
      },
      {
@@ -560,7 +560,7 @@ const BOOKS = {
      },
      {
       "en": "come in",
-      "ph": "",
+      "ph": "/kˈʌm ɪn/",
       "zh": "进来"
      },
      {
@@ -595,7 +595,7 @@ const BOOKS = {
      },
      {
       "en": "listen to",
-      "ph": "",
+      "ph": "/lˈɪsən tˈu/",
       "zh": "听"
      },
      {
@@ -623,7 +623,7 @@ const BOOKS = {
      },
      {
       "en": "shh",
-      "ph": "",
+      "ph": "/ʃ/",
       "zh": "嘘"
      },
      {
@@ -696,7 +696,7 @@ const BOOKS = {
      },
      {
       "en": "that's",
-      "ph": "",
+      "ph": "/ðæts/",
       "zh": "(=that is) 那是"
      },
      {
@@ -721,12 +721,12 @@ const BOOKS = {
      },
      {
       "en": "pencil case",
-      "ph": "",
+      "ph": "/pˈɛnsəl kˈeɪs/",
       "zh": "铅笔盒；铅笔袋"
      },
      {
       "en": "lunch box",
-      "ph": "",
+      "ph": "/lˈʌntʃ bˈɑks/",
       "zh": "午餐盒"
      },
      {
@@ -736,12 +736,12 @@ const BOOKS = {
      },
      {
       "en": "where's",
-      "ph": "",
+      "ph": "/wɛrz/",
       "zh": "(=where is) 在哪里"
      },
      {
       "en": "over there",
-      "ph": "",
+      "ph": "/ˈoʊvɚ ðˈɛr/",
       "zh": "在那里"
      }
     ]
@@ -832,7 +832,7 @@ const BOOKS = {
     "words": [
      {
       "en": "How old are you?",
-      "ph": "",
+      "ph": "/hˈaʊ ˈoʊld ˈɑr jˈu/",
       "zh": "你多大了？"
      },
      {
@@ -887,12 +887,12 @@ const BOOKS = {
      },
      {
       "en": "What a nice cake!",
-      "ph": "",
+      "ph": "/wˈʌt ə nˈaɪs kˈeɪk/",
       "zh": "多么好的蛋糕！"
      },
      {
       "en": "make a wish",
-      "ph": "",
+      "ph": "/mˈeɪk ə wˈɪʃ/",
       "zh": "许个愿"
      },
      {
@@ -902,7 +902,7 @@ const BOOKS = {
      },
      {
       "en": "It's time for ...",
-      "ph": "",
+      "ph": "/ˈɪts tˈaɪm fˈɔr/",
       "zh": "是时候了…"
      }
     ]
@@ -915,12 +915,12 @@ const BOOKS = {
     "words": [
      {
       "en": "What time is it?",
-      "ph": "",
+      "ph": "/wˈʌt tˈaɪm ˈɪz ˈɪt/",
       "zh": "几点了？"
      },
      {
       "en": "wake up",
-      "ph": "",
+      "ph": "/wˈeɪk ˈʌp/",
       "zh": "醒；醒来"
      },
      {
@@ -940,7 +940,7 @@ const BOOKS = {
      },
      {
       "en": "hurry up",
-      "ph": "",
+      "ph": "/hˈɝi ˈʌp/",
       "zh": "快点"
      },
      {
@@ -990,7 +990,7 @@ const BOOKS = {
      },
      {
       "en": "here's",
-      "ph": "",
+      "ph": "/hɪrz/",
       "zh": "(=here is) 这是"
      }
     ]
@@ -1008,7 +1008,7 @@ const BOOKS = {
      },
      {
       "en": "Welcome to ...",
-      "ph": "",
+      "ph": "/wˈɛlkəm tˈu/",
       "zh": "欢迎来到……"
      },
      {
@@ -1073,7 +1073,7 @@ const BOOKS = {
      },
      {
       "en": "who's",
-      "ph": "",
+      "ph": "/huz/",
       "zh": "(= who is) 谁的"
      }
     ]
@@ -1229,7 +1229,7 @@ const BOOKS = {
     "words": [
      {
       "en": "Let's ...",
-      "ph": "",
+      "ph": "/lˈɛts/",
       "zh": "让咱们……"
      },
      {
@@ -1284,7 +1284,7 @@ const BOOKS = {
      },
      {
       "en": "Thanks.",
-      "ph": "",
+      "ph": "/θˈæŋks/",
       "zh": "谢谢"
      },
      {
@@ -1304,7 +1304,7 @@ const BOOKS = {
      },
      {
       "en": "how many",
-      "ph": "",
+      "ph": "/hˈaʊ mˈɛni/",
       "zh": "多少"
      }
     ]
@@ -1322,7 +1322,7 @@ const BOOKS = {
      },
      {
       "en": "sticker",
-      "ph": "",
+      "ph": "/stˈɪkɚ/",
       "zh": "贴纸"
      },
      {
@@ -1332,7 +1332,7 @@ const BOOKS = {
      },
      {
       "en": "have a look",
-      "ph": "",
+      "ph": "/hˈæv ə lˈʊk/",
       "zh": "看一看"
      },
      {
@@ -1392,7 +1392,7 @@ const BOOKS = {
      },
      {
       "en": "table tennis",
-      "ph": "",
+      "ph": "/tˈeɪbəl tˈɛnəs/",
       "zh": "乒乓球"
      },
      {
@@ -1430,7 +1430,7 @@ const BOOKS = {
      },
      {
       "en": "have a try",
-      "ph": "",
+      "ph": "/hˈæv ə trˈaɪ/",
       "zh": "试一试"
      },
      {
@@ -1465,7 +1465,7 @@ const BOOKS = {
      },
      {
       "en": "tweet",
-      "ph": "",
+      "ph": "/twˈit/",
       "zh": "（小鸟的）叽喳声"
      },
      {
@@ -1508,7 +1508,7 @@ const BOOKS = {
      },
      {
       "en": "living room",
-      "ph": "",
+      "ph": "/lˈɪvɪŋ rˈum/",
       "zh": "客厅"
      },
      {
@@ -1548,7 +1548,7 @@ const BOOKS = {
      },
      {
       "en": "How are you?",
-      "ph": "",
+      "ph": "/hˈaʊ ˈɑr jˈu/",
       "zh": "你好吗?"
      },
      {
@@ -1558,12 +1558,12 @@ const BOOKS = {
      },
      {
       "en": "What would you like?",
-      "ph": "",
+      "ph": "/wˈʌt wˈʊd jˈu lˈaɪk/",
       "zh": "你想要什么?"
      },
      {
       "en": "I'd like...",
-      "ph": "",
+      "ph": "/ˈɪd lˈaɪk/",
       "zh": "我想要……"
      }
     ]
@@ -1581,7 +1581,7 @@ const BOOKS = {
      },
      {
       "en": "snack bar",
-      "ph": "",
+      "ph": "/snˈæk bˈɑr/",
       "zh": "快餐店；小吃店"
      },
      {
@@ -1591,12 +1591,12 @@ const BOOKS = {
      },
      {
       "en": "a glass of",
-      "ph": "",
+      "ph": "/ə ɡlˈæs ˈʌv/",
       "zh": "一杯"
      },
      {
       "en": "noodles",
-      "ph": "",
+      "ph": "/nˈudəlz/",
       "zh": "面条"
      },
      {
@@ -1611,7 +1611,7 @@ const BOOKS = {
      },
      {
       "en": "a cup of",
-      "ph": "",
+      "ph": "/ə kˈʌp ˈʌv/",
       "zh": "一杯"
      },
      {
@@ -1621,7 +1621,7 @@ const BOOKS = {
      },
      {
       "en": "Anything else",
-      "ph": "",
+      "ph": "/ˈɛniθˌɪŋ ˈɛls/",
       "zh": "还要其他东西吗"
      },
      {
@@ -1641,7 +1641,7 @@ const BOOKS = {
      },
      {
       "en": "Me too",
-      "ph": "",
+      "ph": "/mˈi tˈu/",
       "zh": "我也是"
      },
      {
@@ -1651,7 +1651,7 @@ const BOOKS = {
      },
      {
       "en": "Can I help you?",
-      "ph": "",
+      "ph": "/kˈæn ˈaɪ hˈɛlp jˈu/",
       "zh": "我能帮助你吗?"
      },
      {
@@ -1669,7 +1669,7 @@ const BOOKS = {
     "words": [
      {
       "en": "how much",
-      "ph": "",
+      "ph": "/hˈaʊ mˈʌtʃ/",
       "zh": "多少钱"
      },
      {
@@ -1679,7 +1679,7 @@ const BOOKS = {
      },
      {
       "en": "yuan",
-      "ph": "",
+      "ph": "/juˈɑn/",
       "zh": "元（人民币）"
      },
      {
@@ -1699,12 +1699,12 @@ const BOOKS = {
      },
      {
       "en": "twenty-eight",
-      "ph": "",
+      "ph": "/twˈɛnti ˈeɪt/",
       "zh": "二十八"
      },
      {
       "en": "Well done.",
-      "ph": "",
+      "ph": "/wˈɛl dˈʌn/",
       "zh": "好样的。干得好"
      },
      {
@@ -1734,7 +1734,7 @@ const BOOKS = {
      },
      {
       "en": "forty-five",
-      "ph": "",
+      "ph": "/fˈɔrti fˈaɪv/",
       "zh": "四十五"
      },
      {
@@ -1847,7 +1847,7 @@ const BOOKS = {
      },
      {
       "en": "Welcome back to ...",
-      "ph": "",
+      "ph": "/wˈɛlkəm bˈæk tˈu/",
       "zh": "欢迎回到……"
      },
      {
@@ -1877,7 +1877,7 @@ const BOOKS = {
      },
      {
       "en": "PE",
-      "ph": "",
+      "ph": "/ˌpiː ˈiː/",
       "zh": "体育（课）"
      },
      {
@@ -1897,7 +1897,7 @@ const BOOKS = {
      },
      {
       "en": "go to",
-      "ph": "",
+      "ph": "/ɡˈoʊ tˈu/",
       "zh": "去……"
      },
      {
@@ -1930,7 +1930,7 @@ const BOOKS = {
     "words": [
      {
       "en": "after school",
-      "ph": "",
+      "ph": "/ˈæftɚ skˈul/",
       "zh": "放学后"
      },
      {
@@ -1940,7 +1940,7 @@ const BOOKS = {
      },
      {
       "en": "What day is it today?",
-      "ph": "",
+      "ph": "/wˈʌt dˈeɪ ˈɪz ˈɪt tədˈeɪ/",
       "zh": "今天星期几？"
      },
      {
@@ -1960,7 +1960,7 @@ const BOOKS = {
      },
      {
       "en": "What a pity!",
-      "ph": "",
+      "ph": "/wˈʌt ə pˈɪti/",
       "zh": "真遗憾"
      },
      {
@@ -1970,7 +1970,7 @@ const BOOKS = {
      },
      {
       "en": "All right.",
-      "ph": "",
+      "ph": "/ˈɔl rˈaɪt/",
       "zh": "好的。"
      },
      {
@@ -2028,32 +2028,32 @@ const BOOKS = {
      },
      {
       "en": "go to school",
-      "ph": "",
+      "ph": "/ɡˈoʊ tˈu skˈul/",
       "zh": "上学"
      },
      {
       "en": "in the morning",
-      "ph": "",
+      "ph": "/ɪn ðə mˈɔrnɪŋ/",
       "zh": "在上午"
      },
      {
       "en": "have lunch",
-      "ph": "",
+      "ph": "/hˈæv lˈʌntʃ/",
       "zh": "吃午饭"
      },
      {
       "en": "in the afternoon",
-      "ph": "",
+      "ph": "/ɪn ðə ˌæftɚnˈun/",
       "zh": "在下午"
      },
      {
       "en": "play football",
-      "ph": "",
+      "ph": "/plˈeɪ fˈʊtbˌɔl/",
       "zh": "踢足球"
      },
      {
       "en": "go home",
-      "ph": "",
+      "ph": "/ɡˈoʊ hˈoʊm/",
       "zh": "回家"
      },
      {
@@ -2063,27 +2063,27 @@ const BOOKS = {
      },
      {
       "en": "have dinner",
-      "ph": "",
+      "ph": "/hˈæv dˈɪnɚ/",
       "zh": "吃晚饭"
      },
      {
       "en": "watch TV",
-      "ph": "",
+      "ph": "/wˈɑtʃ tˈivˈi/",
       "zh": "看电视"
      },
      {
       "en": "go to bed",
-      "ph": "",
+      "ph": "/ɡˈoʊ tˈu bˈɛd/",
       "zh": "睡觉"
      },
      {
       "en": "in the evening",
-      "ph": "",
+      "ph": "/ɪn ðə ˈivnɪŋ/",
       "zh": "在晚上"
      },
      {
       "en": "at night",
-      "ph": "",
+      "ph": "/ˈæt nˈaɪt/",
       "zh": "在夜里"
      }
     ]
@@ -2111,7 +2111,7 @@ const BOOKS = {
      },
      {
       "en": "Good ideal!",
-      "ph": "",
+      "ph": "/ɡˈʊd aɪdˈil/",
       "zh": "好主意！"
      },
      {
@@ -2199,7 +2199,7 @@ const BOOKS = {
      },
      {
       "en": "go boating",
-      "ph": "",
+      "ph": "/ɡˈoʊ bˈoʊtɪŋ/",
       "zh": "去划船"
      },
      {
@@ -2214,7 +2214,7 @@ const BOOKS = {
      },
      {
       "en": "go swimming",
-      "ph": "",
+      "ph": "/ɡˈoʊ swˈɪmɪŋ/",
       "zh": "去游泳"
      },
      {
@@ -2234,7 +2234,7 @@ const BOOKS = {
      },
      {
       "en": "go climbing",
-      "ph": "",
+      "ph": "/ɡˈoʊ klˈaɪmɪŋ/",
       "zh": "去爬山"
      },
      {
@@ -2249,7 +2249,7 @@ const BOOKS = {
      },
      {
       "en": "go skating",
-      "ph": "",
+      "ph": "/ɡˈoʊ skˈeɪtɪŋ/",
       "zh": "去溜冰；去滑冰"
      },
      {
@@ -2342,12 +2342,12 @@ const BOOKS = {
      },
      {
       "en": "I thingk so.",
-      "ph": "",
+      "ph": "/ˈaɪ θɪŋk sˈoʊ/",
       "zh": "我想是。"
      },
      {
       "en": "What's the matter?",
-      "ph": "",
+      "ph": "/wəts ðə mˈætɚ/",
       "zh": "怎么了？"
      },
      {
@@ -2390,7 +2390,7 @@ const BOOKS = {
      },
      {
       "en": "Good night.",
-      "ph": "",
+      "ph": "/ɡˈʊd nˈaɪt/",
       "zh": "晚安。"
      },
      {
@@ -2428,7 +2428,7 @@ const BOOKS = {
      },
      {
       "en": "come to school",
-      "ph": "",
+      "ph": "/kˈʌm tˈu skˈul/",
       "zh": "来学校"
      },
      {
@@ -2448,22 +2448,22 @@ const BOOKS = {
      },
      {
       "en": "take care",
-      "ph": "",
+      "ph": "/tˈeɪk kˈɛr/",
       "zh": "保重"
      },
      {
       "en": "I'm fine,thank you.",
-      "ph": "",
+      "ph": "/ˈɪm fˈaɪn θˈæŋk jˈu/",
       "zh": "我很好，谢谢。"
      },
      {
       "en": "See you tomorrow.",
-      "ph": "",
+      "ph": "/sˈi jˈu təmˈɑrˌoʊ/",
       "zh": "明天见。"
      },
      {
       "en": "See you.",
-      "ph": "",
+      "ph": "/sˈi jˈu/",
       "zh": "再见。"
      },
      {
@@ -2478,12 +2478,12 @@ const BOOKS = {
      },
      {
       "en": "Not so good.",
-      "ph": "",
+      "ph": "/nˈɑt sˈoʊ ɡˈʊd/",
       "zh": "不太好。"
      },
      {
       "en": "at school",
-      "ph": "",
+      "ph": "/ˈæt skˈul/",
       "zh": "在上学；在学校"
      }
     ]
@@ -2528,7 +2528,7 @@ const BOOKS = {
      },
      {
       "en": "just right",
-      "ph": "",
+      "ph": "/dʒˈʌst rˈaɪt/",
       "zh": "正合适，正好"
      },
      {
@@ -2553,7 +2553,7 @@ const BOOKS = {
      },
      {
       "en": "in front of",
-      "ph": "",
+      "ph": "/ɪn frˈʌnt ˈʌv/",
       "zh": "在...前面"
      },
      {
@@ -2563,7 +2563,7 @@ const BOOKS = {
      },
      {
       "en": "Help!",
-      "ph": "",
+      "ph": "/hˈɛlp/",
       "zh": "救命啊！"
      },
      {
@@ -2611,7 +2611,7 @@ const BOOKS = {
      },
      {
       "en": "show ... around",
-      "ph": "",
+      "ph": "/ʃˈoʊ ɚˈaʊnd/",
       "zh": "带...参观"
      },
      {
@@ -2684,7 +2684,7 @@ const BOOKS = {
     "words": [
      {
       "en": "one ... ,the other ...",
-      "ph": "",
+      "ph": "/wˈʌn ðə ˈʌðɚ/",
       "zh": "一个......，另一个......"
      },
      {
@@ -2752,7 +2752,7 @@ const BOOKS = {
      },
      {
       "en": "be good at",
-      "ph": "",
+      "ph": "/bˈi ɡˈʊd ˈæt/",
       "zh": "擅长于"
      },
      {
@@ -2777,12 +2777,12 @@ const BOOKS = {
      },
      {
       "en": "a lot of",
-      "ph": "",
+      "ph": "/ə lˈɑt ˈʌv/",
       "zh": "很多"
      },
      {
       "en": "play the piano",
-      "ph": "",
+      "ph": "/plˈeɪ ðə piˈænoʊ/",
       "zh": "弹钢琴"
      },
      {
@@ -2792,7 +2792,7 @@ const BOOKS = {
      },
      {
       "en": "watch films",
-      "ph": "",
+      "ph": "/wˈɑtʃ fˈɪlmz/",
       "zh": "看电影"
      },
      {
@@ -2832,7 +2832,7 @@ const BOOKS = {
      },
      {
       "en": "Look out!",
-      "ph": "",
+      "ph": "/lˈʊk ˈaʊt/",
       "zh": "当心！注意！"
      },
      {
@@ -2875,7 +2875,7 @@ const BOOKS = {
      },
      {
       "en": "at home",
-      "ph": "",
+      "ph": "/ˈæt hˈoʊm/",
       "zh": "在家"
      },
      {
@@ -2943,12 +2943,12 @@ const BOOKS = {
     "words": [
      {
       "en": "e-friend",
-      "ph": "",
+      "ph": "/ˈi frˈɛnd/",
       "zh": "网友"
      },
      {
       "en": "Wait a minute.",
-      "ph": "",
+      "ph": "/wˈeɪt ə mˈɪnət/",
       "zh": "等一会儿"
      },
      {
@@ -2973,7 +2973,7 @@ const BOOKS = {
      },
      {
       "en": "... years old",
-      "ph": "",
+      "ph": "/jˈɪrz ˈoʊld/",
       "zh": "……岁"
      },
      {
@@ -2998,7 +2998,7 @@ const BOOKS = {
      },
      {
       "en": "go fishing",
-      "ph": "",
+      "ph": "/ɡˈoʊ fˈɪʃɪŋ/",
       "zh": "去钓鱼"
      },
      {
@@ -3013,7 +3013,7 @@ const BOOKS = {
      },
      {
       "en": "Don't worry",
-      "ph": "",
+      "ph": "/doʊnt wˈɝi/",
       "zh": "别担心"
      },
      {
@@ -3023,7 +3023,7 @@ const BOOKS = {
      },
      {
       "en": "by ...",
-      "ph": "",
+      "ph": "/bˈaɪ/",
       "zh": "在……旁边"
      },
      {
@@ -3041,7 +3041,7 @@ const BOOKS = {
     "words": [
      {
       "en": "at weekends",
-      "ph": "",
+      "ph": "/ˈæt wˈikˌɛndz/",
       "zh": "在周末"
      },
      {
@@ -3056,12 +3056,12 @@ const BOOKS = {
      },
      {
       "en": "play with",
-      "ph": "",
+      "ph": "/plˈeɪ wˈɪð/",
       "zh": "和......一起玩"
      },
      {
       "en": "very much",
-      "ph": "",
+      "ph": "/vˈɛri mˈʌtʃ/",
       "zh": "非常"
      },
      {
@@ -3091,7 +3091,7 @@ const BOOKS = {
      },
      {
       "en": "go to the cinema",
-      "ph": "",
+      "ph": "/ɡˈoʊ tˈu ðə sˈɪnəmə/",
       "zh": "去看电影"
      },
      {
@@ -3101,7 +3101,7 @@ const BOOKS = {
      },
      {
       "en": "a lot",
-      "ph": "",
+      "ph": "/ə lˈɑt/",
       "zh": "很多"
      },
      {
@@ -3111,7 +3111,7 @@ const BOOKS = {
      },
      {
       "en": "get out",
-      "ph": "",
+      "ph": "/ɡˈɛt ˈaʊt/",
       "zh": "出来"
      }
     ]
@@ -3139,12 +3139,12 @@ const BOOKS = {
      },
      {
       "en": "Christmas tree",
-      "ph": "",
+      "ph": "/krˈɪsməs trˈi/",
       "zh": "圣诞树"
      },
      {
       "en": "Father Christmas",
-      "ph": "",
+      "ph": "/fˈɑðɚ krˈɪsməs/",
       "zh": "圣诞老人"
      },
      {
@@ -3174,7 +3174,7 @@ const BOOKS = {
      },
      {
       "en": "Christmas Eve",
-      "ph": "",
+      "ph": "/krˈɪsməs ˈiv/",
       "zh": "圣诞夜，平安夜"
      },
      {
@@ -3184,7 +3184,7 @@ const BOOKS = {
      },
      {
       "en": "wait for",
-      "ph": "",
+      "ph": "/wˈeɪt fˈɔr/",
       "zh": "等候，等待"
      },
      {
@@ -3194,7 +3194,7 @@ const BOOKS = {
      },
      {
       "en": "Christmas Day",
-      "ph": "",
+      "ph": "/krˈɪsməs dˈeɪ/",
       "zh": "圣诞节"
      },
      {
@@ -3219,7 +3219,7 @@ const BOOKS = {
      },
      {
       "en": "have a good time",
-      "ph": "",
+      "ph": "/hˈæv ə ɡˈʊd tˈaɪm/",
       "zh": "过得愉快，玩得高兴"
      },
      {
@@ -3239,7 +3239,7 @@ const BOOKS = {
      },
      {
       "en": "Merry Christmas!",
-      "ph": "",
+      "ph": "/mˈɛri krˈɪsməs/",
       "zh": "圣诞快乐！"
      },
      {
@@ -3249,7 +3249,7 @@ const BOOKS = {
      },
      {
       "en": "What's wrong with...?",
-      "ph": "",
+      "ph": "/wəts rˈɔŋ wˈɪð/",
       "zh": "……怎么了？"
      },
      {
@@ -3269,7 +3269,7 @@ const BOOKS = {
      },
      {
       "en": "storybook",
-      "ph": "",
+      "ph": "/stˈɔribˌʊk/",
       "zh": "故事书"
      },
      {
@@ -3294,12 +3294,12 @@ const BOOKS = {
     "words": [
      {
       "en": "prince",
-      "ph": "",
+      "ph": "/prˈɪns/",
       "zh": "王子"
      },
      {
       "en": "fairy",
-      "ph": "",
+      "ph": "/fˈɛri/",
       "zh": "仙女"
      },
      {
@@ -3324,7 +3324,7 @@ const BOOKS = {
      },
      {
       "en": "put on",
-      "ph": "",
+      "ph": "/pˈʊt ˈɑn/",
       "zh": "穿上"
      },
      {
@@ -3334,7 +3334,7 @@ const BOOKS = {
      },
      {
       "en": "have to",
-      "ph": "",
+      "ph": "/hˈæv tˈu/",
       "zh": "不得不，必须"
      },
      {
@@ -3374,12 +3374,12 @@ const BOOKS = {
      },
      {
       "en": "be bad for",
-      "ph": "",
+      "ph": "/bˈi bˈæd fˈɔr/",
       "zh": "有害的"
      },
      {
       "en": "leave ... behind",
-      "ph": "",
+      "ph": "/lˈiv bɪhˈaɪnd/",
       "zh": "留下，丢下"
      }
     ]
@@ -3392,7 +3392,7 @@ const BOOKS = {
     "words": [
      {
       "en": "far from",
-      "ph": "",
+      "ph": "/fˈɑr frˈʌm/",
       "zh": "离……远"
      },
      {
@@ -3402,7 +3402,7 @@ const BOOKS = {
      },
      {
       "en": "by ...",
-      "ph": "",
+      "ph": "/bˈaɪ/",
       "zh": "乘（汽车、火车等）"
      },
      {
@@ -3412,12 +3412,12 @@ const BOOKS = {
      },
      {
       "en": "on foot",
-      "ph": "",
+      "ph": "/ˈɑn fˈʊt/",
       "zh": "步行"
      },
      {
       "en": "metro",
-      "ph": "",
+      "ph": "/mˈɛtrˌoʊ/",
       "zh": "地铁"
      },
      {
@@ -3475,12 +3475,12 @@ const BOOKS = {
     "words": [
      {
       "en": "ask the way",
-      "ph": "",
+      "ph": "/ˈæsk ðə wˈeɪ/",
       "zh": "问路"
      },
      {
       "en": "get to",
-      "ph": "",
+      "ph": "/ɡˈɛt tˈu/",
       "zh": "到达"
      },
      {
@@ -3520,17 +3520,17 @@ const BOOKS = {
      },
      {
       "en": "See you later.",
-      "ph": "",
+      "ph": "/sˈi jˈu lˈeɪtɚ/",
       "zh": "一会儿见。"
      },
      {
       "en": "ask ... for help",
-      "ph": "",
+      "ph": "/ˈæsk fˈɔr hˈɛlp/",
       "zh": "向……求助"
      },
      {
       "en": "excuse me",
-      "ph": "",
+      "ph": "/ɪkskjˈus mˈi/",
       "zh": "劳驾；对不起"
      },
      {
@@ -3540,17 +3540,17 @@ const BOOKS = {
      },
      {
       "en": "turn right",
-      "ph": "",
+      "ph": "/tˈɝn rˈaɪt/",
       "zh": "向右转"
      },
      {
       "en": "traffic light",
-      "ph": "",
+      "ph": "/trˈæfɪk lˈaɪt/",
       "zh": "交通灯"
      },
      {
       "en": "on your right",
-      "ph": "",
+      "ph": "/ˈɑn jˈɔr rˈaɪt/",
       "zh": "在你的右侧"
      },
      {
@@ -3575,7 +3575,7 @@ const BOOKS = {
      },
      {
       "en": "turn left",
-      "ph": "",
+      "ph": "/tˈɝn lˈɛft/",
       "zh": "向左转"
      },
      {
@@ -3608,7 +3608,7 @@ const BOOKS = {
     "words": [
      {
       "en": "see the doctor",
-      "ph": "",
+      "ph": "/sˈi ðə dˈɑktɚ/",
       "zh": "看医生，看病"
      },
      {
@@ -3628,17 +3628,17 @@ const BOOKS = {
      },
      {
       "en": "have a rest",
-      "ph": "",
+      "ph": "/hˈæv ə rˈɛst/",
       "zh": "休息"
      },
      {
       "en": "take medicine",
-      "ph": "",
+      "ph": "/tˈeɪk mˈɛdəsən/",
       "zh": "吃药"
      },
      {
       "en": "drink water",
-      "ph": "",
+      "ph": "/drˈɪŋk wˈɔtɚ/",
       "zh": "喝水"
      },
      {
@@ -3658,12 +3658,12 @@ const BOOKS = {
      },
      {
       "en": "Brush one's teeth",
-      "ph": "",
+      "ph": "/brˈʌʃ wˈʌnz tˈiθ/",
       "zh": "刷牙"
      },
      {
       "en": "bedtime",
-      "ph": "",
+      "ph": "/bˈɛdtˌaɪm/",
       "zh": "就寝时间"
      },
      {
@@ -3673,7 +3673,7 @@ const BOOKS = {
      },
      {
       "en": "point at",
-      "ph": "",
+      "ph": "/pˈɔɪnt ˈæt/",
       "zh": "指着，指向"
      },
      {
@@ -3706,7 +3706,7 @@ const BOOKS = {
      },
      {
       "en": "sweep the floor",
-      "ph": "",
+      "ph": "/swˈip ðə flˈɔr/",
       "zh": "扫地"
      },
      {
@@ -3716,12 +3716,12 @@ const BOOKS = {
      },
      {
       "en": "wash the dishes",
-      "ph": "",
+      "ph": "/wˈɑʃ ðə dˈɪʃəz/",
       "zh": "洗碗"
      },
      {
       "en": "make the bed",
-      "ph": "",
+      "ph": "/mˈeɪk ðə bˈɛd/",
       "zh": "整理床铺"
      },
      {
@@ -3746,12 +3746,12 @@ const BOOKS = {
      },
      {
       "en": "ladybird",
-      "ph": "",
+      "ph": "/lˈeɪdibˌɝd/",
       "zh": "瓢虫"
      },
      {
       "en": "go away",
-      "ph": "",
+      "ph": "/ɡˈoʊ əwˈeɪ/",
       "zh": "走了，走开"
      }
     ]
@@ -3794,7 +3794,7 @@ const BOOKS = {
      },
      {
       "en": "I can't wait!",
-      "ph": "",
+      "ph": "/ˈaɪ kˈænt wˈeɪt/",
       "zh": "我等不及了！"
      },
      {
@@ -3849,7 +3849,7 @@ const BOOKS = {
      },
      {
       "en": "drive ... away",
-      "ph": "",
+      "ph": "/drˈaɪv əwˈeɪ/",
       "zh": "赶走"
      }
     ]
@@ -3867,7 +3867,7 @@ const BOOKS = {
      },
      {
       "en": "Spring Festival",
-      "ph": "",
+      "ph": "/sprˈɪŋ fˈɛstəvəl/",
       "zh": "春节"
      },
      {
@@ -3887,12 +3887,12 @@ const BOOKS = {
      },
      {
       "en": "Chinese New Year",
-      "ph": "",
+      "ph": "/tʃaɪnˈiz nˈu jˈɪr/",
       "zh": "中国农历新年"
      },
      {
       "en": "get together",
-      "ph": "",
+      "ph": "/ɡˈɛt təɡˈɛðɚ/",
       "zh": "团聚"
      },
      {
@@ -3902,7 +3902,7 @@ const BOOKS = {
      },
      {
       "en": "Dragon Boat Festival",
-      "ph": "",
+      "ph": "/drˈæɡən bˈoʊt fˈɛstəvəl/",
       "zh": "端午节"
      },
      {
@@ -3917,7 +3917,7 @@ const BOOKS = {
      },
      {
       "en": "dragon boat race",
-      "ph": "",
+      "ph": "/drˈæɡən bˈoʊt rˈeɪs/",
       "zh": "赛龙舟"
      },
      {
@@ -3927,12 +3927,12 @@ const BOOKS = {
      },
      {
       "en": "rice dumpling",
-      "ph": "",
+      "ph": "/rˈaɪs dˈʌmplɪŋ/",
       "zh": "粽子"
      },
      {
       "en": "Mid-Autumn Festival",
-      "ph": "",
+      "ph": "/mˈɪd ˈɔtəm fˈɛstəvəl/",
       "zh": "中秋节"
      },
      {
@@ -3952,12 +3952,12 @@ const BOOKS = {
      },
      {
       "en": "moon cake",
-      "ph": "",
+      "ph": "/mˈun kˈeɪk/",
       "zh": "月饼"
      },
      {
       "en": "Double Ninth Festival",
-      "ph": "",
+      "ph": "/dˈʌbəl nˈaɪnθ fˈɛstəvəl/",
       "zh": "重阳节"
      },
      {
@@ -3977,17 +3977,17 @@ const BOOKS = {
      },
      {
       "en": "rice cake",
-      "ph": "",
+      "ph": "/rˈaɪs kˈeɪk/",
       "zh": "重阳糕"
      },
      {
       "en": "Mother's Day",
-      "ph": "",
+      "ph": "/mˈʌðɚz dˈeɪ/",
       "zh": "母亲节"
      },
      {
       "en": "Father's Day",
-      "ph": "",
+      "ph": "/fˈɑðɚz dˈeɪ/",
       "zh": "父亲节"
      }
     ]
@@ -4025,7 +4025,7 @@ const BOOKS = {
      },
      {
       "en": "go shopping",
-      "ph": "",
+      "ph": "/ɡˈoʊ ʃˈɑpɪŋ/",
       "zh": "去购物"
      },
      {
@@ -4065,7 +4065,7 @@ const BOOKS = {
      },
      {
       "en": "password",
-      "ph": "",
+      "ph": "/pˈæswˌɝd/",
       "zh": "密码"
      },
      {
@@ -4105,7 +4105,7 @@ const BOOKS = {
     "words": [
      {
       "en": "long long ago",
-      "ph": "",
+      "ph": "/lˈɔŋ lˈɔŋ əɡˈoʊ/",
       "zh": "很久以前"
      },
      {
@@ -4140,7 +4140,7 @@ const BOOKS = {
      },
      {
       "en": "turn into",
-      "ph": "",
+      "ph": "/tˈɝn ˈɪntu/",
       "zh": "变成"
      },
      {
@@ -4278,22 +4278,22 @@ const BOOKS = {
      },
      {
       "en": "what happened?",
-      "ph": "",
+      "ph": "/wˈʌt hˈæpənd/",
       "zh": "出什么事了？"
      },
      {
       "en": "climb up",
-      "ph": "",
+      "ph": "/klˈaɪm ˈʌp/",
       "zh": "爬上"
      },
      {
       "en": "hold onto",
-      "ph": "",
+      "ph": "/hˈoʊld ˈɑntu/",
       "zh": "抓紧"
      },
      {
       "en": "fly away",
-      "ph": "",
+      "ph": "/flˈaɪ əwˈeɪ/",
       "zh": "飞走"
      }
     ]
@@ -4326,22 +4326,22 @@ const BOOKS = {
      },
      {
       "en": "Shanghai Museum",
-      "ph": "",
+      "ph": "/ʃˈæŋhˈaɪ mjuzˈiəm/",
       "zh": "上海博物馆"
      },
      {
       "en": "Great Wall",
-      "ph": "",
+      "ph": "/ɡrˈeɪt wˈɔl/",
       "zh": "长城"
      },
      {
       "en": "Palace Museum",
-      "ph": "",
+      "ph": "/pˈæləs mjuzˈiəm/",
       "zh": "故宫"
      },
      {
       "en": "Summer Palace",
-      "ph": "",
+      "ph": "/sˈʌmɚ pˈæləs/",
       "zh": "颐和园"
      },
      {
@@ -4351,7 +4351,7 @@ const BOOKS = {
      },
      {
       "en": "fashion show",
-      "ph": "",
+      "ph": "/fˈæʃən ʃˈoʊ/",
       "zh": "时装表演，时装秀"
      },
      {
@@ -4361,17 +4361,17 @@ const BOOKS = {
      },
      {
       "en": "go well",
-      "ph": "",
+      "ph": "/ɡˈoʊ wˈɛl/",
       "zh": "进展顺利"
      },
      {
       "en": "at first",
-      "ph": "",
+      "ph": "/ˈæt fˈɝst/",
       "zh": "开始，最初"
      },
      {
       "en": "heavy rain",
-      "ph": "",
+      "ph": "/hˈɛvi rˈeɪn/",
       "zh": "大雨"
      }
     ]
@@ -4384,7 +4384,7 @@ const BOOKS = {
     "words": [
      {
       "en": "then and now",
-      "ph": "",
+      "ph": "/ðˈɛn ənd nˈaʊ/",
       "zh": "过去和现在"
      },
      {
@@ -4404,12 +4404,12 @@ const BOOKS = {
      },
      {
       "en": "mobile phone",
-      "ph": "",
+      "ph": "/mˈoʊbəl fˈoʊn/",
       "zh": "移动电话"
      },
      {
       "en": "any where",
-      "ph": "",
+      "ph": "/ˈɛni wˈɛr/",
       "zh": "随处，到处"
      },
      {
@@ -4429,22 +4429,22 @@ const BOOKS = {
      },
      {
       "en": "e-book",
-      "ph": "",
+      "ph": "/ˈi bˈʊk/",
       "zh": "电子书"
      },
      {
       "en": "make friends",
-      "ph": "",
+      "ph": "/mˈeɪk frˈɛndz/",
       "zh": "交朋友"
      },
      {
       "en": "all over the world",
-      "ph": "",
+      "ph": "/ˈɔl ˈoʊvɚ ðə wˈɝld/",
       "zh": "全世界"
      },
      {
       "en": "do shopping",
-      "ph": "",
+      "ph": "/dˈu ʃˈɑpɪŋ/",
       "zh": "购物"
      },
      {
@@ -4454,17 +4454,17 @@ const BOOKS = {
      },
      {
       "en": "look out of",
-      "ph": "",
+      "ph": "/lˈʊk ˈaʊt ˈʌv/",
       "zh": "朝……外看"
      },
      {
       "en": "What day is today?",
-      "ph": "",
+      "ph": "/wˈʌt dˈeɪ ˈɪz tədˈeɪ/",
       "zh": "今天是星期几？"
      },
      {
       "en": "go on",
-      "ph": "",
+      "ph": "/ɡˈoʊ ˈɑn/",
       "zh": "继续"
      },
      {
@@ -4474,7 +4474,7 @@ const BOOKS = {
      },
      {
       "en": "make a sentence",
-      "ph": "",
+      "ph": "/mˈeɪk ə sˈɛntəns/",
       "zh": "造句"
      },
      {
@@ -4502,7 +4502,7 @@ const BOOKS = {
      },
      {
       "en": "shopping center",
-      "ph": "",
+      "ph": "/ʃˈɑpɪŋ sˈɛntɚ/",
       "zh": "购物中心"
      },
      {
@@ -4512,7 +4512,7 @@ const BOOKS = {
      },
      {
       "en": "What does it mean?",
-      "ph": "",
+      "ph": "/wˈʌt dˈʌz ˈɪt mˈin/",
       "zh": "这是什么意思？"
      },
      {
@@ -4527,7 +4527,7 @@ const BOOKS = {
      },
      {
       "en": "go in",
-      "ph": "",
+      "ph": "/ɡˈoʊ ɪn/",
       "zh": "进入"
      },
      {
@@ -4552,32 +4552,32 @@ const BOOKS = {
      },
      {
       "en": "No eating or drinking.",
-      "ph": "",
+      "ph": "/nˈoʊ ˈitɪŋ ˈɔr drˈɪŋkɪŋ/",
       "zh": "请勿饮食。"
      },
      {
       "en": "No littering.",
-      "ph": "",
+      "ph": "/nˈoʊ lˈɪtɚɪŋ/",
       "zh": "请勿乱扔垃圾。"
      },
      {
       "en": "No parking.",
-      "ph": "",
+      "ph": "/nˈoʊ pˈɑrkɪŋ/",
       "zh": "请勿停车。"
      },
      {
       "en": "No smoking.",
-      "ph": "",
+      "ph": "/nˈoʊ smˈoʊkɪŋ/",
       "zh": "请勿抽烟。"
      },
      {
       "en": "Danger！",
-      "ph": "",
+      "ph": "/dˈeɪndʒɚ/",
       "zh": "危险！"
      },
      {
       "en": "Wet floor.",
-      "ph": "",
+      "ph": "/wˈɛt flˈɔr/",
       "zh": "小心地滑."
      },
      {
@@ -4587,7 +4587,7 @@ const BOOKS = {
      },
      {
       "en": "walk on",
-      "ph": "",
+      "ph": "/wˈɔk ˈɑn/",
       "zh": "继续走路"
      },
      {
@@ -4655,7 +4655,7 @@ const BOOKS = {
      },
      {
       "en": "move ... away from",
-      "ph": "",
+      "ph": "/mˈuv əwˈeɪ frˈʌm/",
       "zh": "从……搬走"
      },
      {
@@ -4690,7 +4690,7 @@ const BOOKS = {
      },
      {
       "en": "pick ... up",
-      "ph": "",
+      "ph": "/pˈɪk ˈʌp/",
       "zh": "捡起，拾起"
      },
      {
@@ -4758,7 +4758,7 @@ const BOOKS = {
      },
      {
       "en": "come from",
-      "ph": "",
+      "ph": "/kˈʌm frˈʌm/",
       "zh": "从……来，来自"
      },
      {
@@ -4788,7 +4788,7 @@ const BOOKS = {
      },
      {
       "en": "too many",
-      "ph": "",
+      "ph": "/tˈu mˈɛni/",
       "zh": "太多"
      },
      {
@@ -4846,27 +4846,27 @@ const BOOKS = {
      },
      {
       "en": "tangyuan",
-      "ph": "",
+      "ph": "/tɑŋ ɥuan/",
       "zh": "汤圆"
      },
      {
       "en": "Chinese New Year's Eve",
-      "ph": "",
+      "ph": "/tʃaɪnˈiz nˈu jˈɪrz ˈiv/",
       "zh": "大年夜，除夕"
      },
      {
       "en": "Chinese New Year's Day",
-      "ph": "",
+      "ph": "/tʃaɪnˈiz nˈu jˈɪrz dˈeɪ/",
       "zh": "大年初一，春节"
      },
      {
       "en": "red packet",
-      "ph": "",
+      "ph": "/rˈɛd pˈækət/",
       "zh": "红包"
      },
      {
       "en": "lion dance",
-      "ph": "",
+      "ph": "/lˈaɪən dˈæns/",
       "zh": "舞狮"
      },
      {
@@ -4876,7 +4876,7 @@ const BOOKS = {
      },
      {
       "en": "firecracker",
-      "ph": "",
+      "ph": "/fˈaɪɚkrˌækɚ/",
       "zh": "鞭炮"
      },
      {
@@ -4926,17 +4926,17 @@ const BOOKS = {
      },
      {
       "en": "walk by",
-      "ph": "",
+      "ph": "/wˈɔk bˈaɪ/",
       "zh": "走过，路过"
      },
      {
       "en": "wake ... up",
-      "ph": "",
+      "ph": "/wˈeɪk ˈʌp/",
       "zh": "吵醒，叫醒"
      },
      {
       "en": "some day",
-      "ph": "",
+      "ph": "/sˈʌm dˈeɪ/",
       "zh": "某一天"
      },
      {
@@ -4951,7 +4951,7 @@ const BOOKS = {
      },
      {
       "en": "the next day",
-      "ph": "",
+      "ph": "/ðə nˈɛkst dˈeɪ/",
       "zh": "第二天"
      },
      {
@@ -4976,7 +4976,7 @@ const BOOKS = {
      },
      {
       "en": "just then",
-      "ph": "",
+      "ph": "/dʒˈʌst ðˈɛn/",
       "zh": "就在那时"
      },
      {
@@ -4986,7 +4986,7 @@ const BOOKS = {
      },
      {
       "en": "get out",
-      "ph": "",
+      "ph": "/ɡˈɛt ˈaʊt/",
       "zh": "出来，出去"
      },
      {
@@ -4996,7 +4996,7 @@ const BOOKS = {
      },
      {
       "en": "from then on",
-      "ph": "",
+      "ph": "/frˈʌm ðˈɛn ˈɑn/",
       "zh": "从那时起"
      },
      {
@@ -5031,7 +5031,7 @@ const BOOKS = {
      },
      {
       "en": "pour ... into",
-      "ph": "",
+      "ph": "/pˈɔr ˈɪntu/",
       "zh": "把……倒入"
      }
     ]
@@ -5064,7 +5064,7 @@ const BOOKS = {
      },
      {
       "en": "put ... in order",
-      "ph": "",
+      "ph": "/pˈʊt ɪn ˈɔrdɚ/",
       "zh": "把……整理得井井有条"
      },
      {
@@ -5089,7 +5089,7 @@ const BOOKS = {
      },
      {
       "en": "last night",
-      "ph": "",
+      "ph": "/lˈæst nˈaɪt/",
       "zh": "昨夜"
      },
      {
@@ -5099,7 +5099,7 @@ const BOOKS = {
      },
      {
       "en": "go into",
-      "ph": "",
+      "ph": "/ɡˈoʊ ˈɪntu/",
       "zh": "走进，走入"
      }
     ]
@@ -5122,17 +5122,17 @@ const BOOKS = {
      },
      {
       "en": "a little",
-      "ph": "",
+      "ph": "/ə lˈɪtəl/",
       "zh": "一点"
      },
      {
       "en": "a few",
-      "ph": "",
+      "ph": "/ə fjˈu/",
       "zh": "几个"
      },
      {
       "en": "at a time",
-      "ph": "",
+      "ph": "/ˈæt ə tˈaɪm/",
       "zh": "一次"
      },
      {
@@ -5142,7 +5142,7 @@ const BOOKS = {
      },
      {
       "en": "too much",
-      "ph": "",
+      "ph": "/tˈu mˈʌtʃ/",
       "zh": "太多"
      },
      {
@@ -5175,7 +5175,7 @@ const BOOKS = {
      },
      {
       "en": "safely",
-      "ph": "",
+      "ph": "/sˈeɪfli/",
       "zh": "安全地"
      },
      {
@@ -5185,7 +5185,7 @@ const BOOKS = {
      },
      {
       "en": "zebra crossing",
-      "ph": "",
+      "ph": "/zˈibrə krˈɔsɪŋ/",
       "zh": "斑马线"
      },
      {
@@ -5200,7 +5200,7 @@ const BOOKS = {
      },
      {
       "en": "look out for",
-      "ph": "",
+      "ph": "/lˈʊk ˈaʊt fˈɔr/",
       "zh": "当心，提防"
      },
      {
@@ -5233,7 +5233,7 @@ const BOOKS = {
     "words": [
      {
       "en": "Children's Day",
-      "ph": "",
+      "ph": "/tʃˈɪldrənz dˈeɪ/",
       "zh": "儿童节"
      },
      {
@@ -5258,7 +5258,7 @@ const BOOKS = {
      },
      {
       "en": "put on",
-      "ph": "",
+      "ph": "/pˈʊt ˈɑn/",
       "zh": "上演，表演"
      }
     ]
@@ -5286,7 +5286,7 @@ const BOOKS = {
      },
      {
       "en": "next week",
-      "ph": "",
+      "ph": "/nˈɛkst wˈik/",
       "zh": "下周"
      },
      {
@@ -5311,12 +5311,12 @@ const BOOKS = {
      },
      {
       "en": "lover",
-      "ph": "",
+      "ph": "/lˈʌvɚ/",
       "zh": "爱好者"
      },
      {
       "en": "Australian football",
-      "ph": "",
+      "ph": "/ɔstrˈeɪljən fˈʊtbˌɔl/",
       "zh": "澳式橄榄球"
      },
      {
@@ -5361,7 +5361,7 @@ const BOOKS = {
      },
      {
       "en": "Tower Bridge",
-      "ph": "",
+      "ph": "/tˈaʊɚ brˈɪdʒ/",
       "zh": "（伦敦）塔桥"
      },
      {
@@ -5371,7 +5371,7 @@ const BOOKS = {
      },
      {
       "en": "What do you think?",
-      "ph": "",
+      "ph": "/wˈʌt dˈu jˈu θˈɪŋk/",
       "zh": "你觉得呢?"
      }
     ]
@@ -5384,7 +5384,7 @@ const BOOKS = {
     "words": [
      {
       "en": "summer holiday",
-      "ph": "",
+      "ph": "/sˈʌmɚ hˈɑlədˌeɪ/",
       "zh": "暑假"
      },
      {
@@ -5394,12 +5394,12 @@ const BOOKS = {
      },
      {
       "en": "go back to",
-      "ph": "",
+      "ph": "/ɡˈoʊ bˈæk tˈu/",
       "zh": "回去"
      },
      {
       "en": "how long",
-      "ph": "",
+      "ph": "/hˈaʊ lˈɔŋ/",
       "zh": "多久"
      },
      {
@@ -5419,12 +5419,12 @@ const BOOKS = {
      },
      {
       "en": "Ocean Park",
-      "ph": "",
+      "ph": "/ˈoʊʃən pˈɑrk/",
       "zh": "（香港）海洋公园"
      },
      {
       "en": "Taipei",
-      "ph": "",
+      "ph": "/tˈaɪpˌeɪ/",
       "zh": "台北"
      },
      {
@@ -5439,7 +5439,7 @@ const BOOKS = {
      },
      {
       "en": "travel around the world",
-      "ph": "",
+      "ph": "/trˈævəl ɚˈaʊnd ðə wˈɝld/",
       "zh": "环游世界"
      }
     ]
@@ -5462,7 +5462,7 @@ const BOOKS = {
      },
      {
       "en": "care about",
-      "ph": "",
+      "ph": "/kˈɛr əbˈaʊt/",
       "zh": "关心，在乎"
      },
      {
@@ -5482,7 +5482,7 @@ const BOOKS = {
      },
      {
       "en": "football player",
-      "ph": "",
+      "ph": "/fˈʊtbˌɔl plˈeɪɚ/",
       "zh": "足球运动员"
      },
      {
@@ -5492,7 +5492,7 @@ const BOOKS = {
      },
      {
       "en": "dancer",
-      "ph": "",
+      "ph": "/dˈænsɚ/",
       "zh": "舞蹈家"
      },
      {
@@ -5507,7 +5507,7 @@ const BOOKS = {
      },
      {
       "en": "take care of",
-      "ph": "",
+      "ph": "/tˈeɪk kˈɛr ˈʌv/",
       "zh": "爱护；照顾"
      },
      {
