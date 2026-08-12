@@ -57,6 +57,11 @@
             <div class="quick-name">错词复习</div>
             <div class="quick-desc" id="homeWrongCount">0 个待巩固</div>
           </button>
+          <button class="quick-card q-review" data-goto="review">
+            <div class="quick-emoji">📝</div>
+            <div class="quick-name">年级总复习</div>
+            <div class="quick-desc">跨册综合测验</div>
+          </button>
         </div>
 
         <div class="mini-stat">
@@ -109,6 +114,15 @@
         <div id="skillRead" class="skill-panel"></div>
       </section>
 
+      <!-- 总复习 -->
+      <section class="page" id="page-review">
+        <div class="card">
+          <div class="card-title">📝 按年级总复习</div>
+          <div class="grade-row" id="reviewGrades"></div>
+        </div>
+        <div id="reviewBody"></div>
+      </section>
+
       <!-- 进度 -->
       <section class="page" id="page-progress">
         <div class="card">
@@ -135,6 +149,7 @@
       <button class="tab" data-page="dictation"><span class="tab-emoji">✍️</span><span class="tab-text">默写</span></button>
       <button class="tab" data-page="skills"><span class="tab-emoji">🎯</span><span class="tab-text">听说读</span></button>
       <button class="tab" data-page="progress"><span class="tab-emoji">📊</span><span class="tab-text">进度</span></button>
+      <button class="tab" data-page="review"><span class="tab-emoji">📝</span><span class="tab-text">总复习</span></button>
     </nav>
   </div>
 
