@@ -716,6 +716,36 @@
     renderUnitList();
     renderSkills();
     renderProgress();
+
+    // PWA：注册离线缓存 + 安装到桌面提示
+    registerPWA();
+  }
+
+  /* ---------- PWA ---------- */
+  let deferredPrompt = null;
+  function registerPWA() {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js').catch(() => {});
+      });
+    }
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const bar = document.getElementById('installBar');
+      if (bar) bar.hidden = false;
+    });
+    const bar = document.getElementById('installBar');
+    const btn = document.getElementById('installBtn');
+    const close = document.getElementById('installClose');
+    if (btn) btn.onclick = () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(() => { deferredPrompt = null; }).catch(() => {});
+      }
+      if (bar) bar.hidden = true;
+    };
+    if (close) close.onclick = () => { if (bar) bar.hidden = true; };
   }
 
   document.addEventListener('DOMContentLoaded', init);
