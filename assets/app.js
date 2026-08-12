@@ -726,7 +726,16 @@
   function registerPWA() {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js').catch(() => {});
+        navigator.serviceWorker.register('service-worker.js')
+          .then((reg) => { if (reg) reg.update(); })   // 每次加载强制检查新版本 → 秒级更新
+          .catch(() => {});
+        // 新 Service Worker 接管后自动重载一次，立即生效最新内容
+        let reloading = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (reloading) return;
+          reloading = true;
+          location.reload();
+        });
       });
     }
     window.addEventListener('beforeinstallprompt', (e) => {
