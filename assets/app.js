@@ -186,6 +186,8 @@
     if (name === 'progress') renderProgress();
     if (name === 'bank') renderUnitList();
     if (name === 'skills') renderSkills();
+    if (name === 'review') renderReview();
+    if (name === 'dictation') { $('#dictResult').classList.add('hidden'); $('#dictPlay').classList.add('hidden'); renderDictSetup(); }
     window.scrollTo(0, 0);
   }
 
@@ -270,11 +272,13 @@
     };
   }
 
-  function startDictation(useWrong) {
+  function startDictation(useWrong, unitsOverride, limit) {
     let words = [];
     if (useWrong) {
       words = Object.values(store.wrong).map(e => ({ unitId: e.unitId, en: e.en, zh: e.zh, ph: e.ph }));
       if (!words.length) { toast('错词本还是空的，先去默写吧'); return; }
+    } else if (unitsOverride) {
+      unitsOverride.forEach(u => u.words.forEach(w => words.push({ unitId: u.id, en: w.en, zh: w.zh, ph: w.ph })));
     } else {
       const sel = $$('#dictUnits .chip:not(.all).active').map(c => c.dataset.unit);
       if (!sel.length) { toast('请先选择单元'); return; }
@@ -282,9 +286,10 @@
         const u = UNITS.find(x => x.id === uid);
         u.words.forEach(w => words.push({ unitId: uid, en: w.en, zh: w.zh, ph: w.ph }));
       });
-      // 打乱
-      words = words.sort(() => Math.random() - 0.5);
     }
+    // 打乱；若指定题量则随机抽样
+    words = words.sort(() => Math.random() - 0.5);
+    if (limit && words.length > limit) words = words.slice(0, limit);
     dictState.queue = words;
     dictState.idx = 0;
     dictState.score = 0;
@@ -559,6 +564,62 @@
       speak(w, 0.85);
     });
     $$('.speak-btn', wrap).forEach(b => b.onclick = (e) => { e.stopPropagation(); speak(b.dataset.w, 0.85); });
+  }
+
+  /* ---------- 总复习（按年级跨册） ---------- */
+  let reviewState = { grade: null, mode: 'zh2en', limit: 0 };
+  // 该年级包含的两册
+  function gradeBooks(grade) { return BOOK_ORDER.filter(b => BOOKS[b].grade === grade); }
+  // 该年级全部单元（含上、下两册，unitId 自带册名，进度/错词互不串）
+  function gradeUnits(grade) {
+    const out = [];
+    gradeBooks(grade).forEach(b => BOOKS[b].units.forEach(u => out.push(u)));
+    return out;
+  }
+
+  function renderReview() {
+    const grades = ['三年级', '四年级', '五年级', '六年级'];
+    const box = $('#reviewGrades');
+    box.innerHTML = grades.map(g =>
+      `<button class="grade-chip ${reviewState.grade === g ? 'active' : ''}" data-g="${g}">${g}</button>`).join('');
+    $$('.grade-chip', box).forEach(c => c.onclick = () => { reviewState.grade = c.dataset.g; renderReviewBody(); });
+    renderReviewBody();
+  }
+
+  function renderReviewBody() {
+    const body = $('#reviewBody');
+    if (!reviewState.grade) {
+      body.innerHTML = '<div class="review-summary">先选一个年级，再选模式与题量，开始跨册总复习。</div>';
+      return;
+    }
+    const units = gradeUnits(reviewState.grade);
+    const total = units.reduce((s, u) => s + u.words.length, 0);
+    const lbs = gradeBooks(reviewState.grade).map(b => BOOKS[b].label);
+    const summary = `${reviewState.grade}：共 ${total} 词（${lbs.join(' + ')}）`;
+    const modes = [['zh2en', '看中文写英文'], ['en2zh', '看英文写中文'], ['listen', '🔊 听音默写']];
+    const limits = [[0, '全部'], [20, '随机20'], [10, '随机10']];
+    body.innerHTML = `
+      <div class="review-summary">${summary}</div>
+      <div class="card">
+        <div class="card-title">① 选模式</div>
+        <div class="mode-row" id="rvModes">
+          ${modes.map(m => `<button class="mode-btn ${reviewState.mode === m[0] ? 'active' : ''}" data-m="${m[0]}">${m[1]}</button>`).join('')}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">② 选题量</div>
+        <div class="chip-row" id="rvLimits">
+          ${limits.map(l => `<span class="chip ${reviewState.limit === l[0] ? 'active' : ''}" data-l="${l[0]}">${l[1]}</span>`).join('')}
+        </div>
+      </div>
+      <button class="btn-primary" id="rvStart">开始总复习</button>`;
+    $$('#rvModes .mode-btn', body).forEach(b => b.onclick = () => { reviewState.mode = b.dataset.m; renderReviewBody(); });
+    $$('#rvLimits .chip', body).forEach(c => c.onclick = () => { reviewState.limit = parseInt(c.dataset.l, 10); renderReviewBody(); });
+    $('#rvStart').onclick = () => {
+      dictState.mode = reviewState.mode;
+      goPage('dictation');
+      startDictation(false, gradeUnits(reviewState.grade), reviewState.limit);
+    };
   }
 
   /* ---------- 进度 ---------- */
