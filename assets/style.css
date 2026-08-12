@@ -86,6 +86,7 @@ body {
 .q-speak   { background: linear-gradient(135deg, #f59e0b, #f97316); }
 .q-read    { background: linear-gradient(135deg, #ec4899, #f43f7e); }
 .q-wrong   { background: linear-gradient(135deg, #ef4444, #f43f5e); }
+.q-review  { background: linear-gradient(135deg, #34c759, #2ecc71); }
 
 /* 迷你统计 */
 .mini-stat { display: flex; gap: 10px; margin-top: 14px; }
